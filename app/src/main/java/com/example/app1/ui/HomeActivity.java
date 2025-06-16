@@ -1,9 +1,15 @@
-package com.example.app1;
+package com.example.app1.ui;
 
 import android.os.Bundle;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
 import androidx.viewpager2.widget.ViewPager2;
+import com.example.app1.R;
+import com.example.app1.adapter.FragmentAdapter;
+import com.example.app1.ui.fragments.FriendsFragment;
+import com.example.app1.ui.fragments.GamesFragment;
+import com.example.app1.ui.fragments.MessageFragment;
+import com.example.app1.ui.fragments.ProfileFragment;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import java.util.ArrayList;
 import java.util.List;

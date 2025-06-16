@@ -1,4 +1,4 @@
-package com.example.app1;
+package com.example.app1.ui.fragments;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -9,6 +9,10 @@ import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
+import com.example.app1.R;
+import com.example.app1.adapter.GameAdapter;
+import com.example.app1.model.Game;
+import com.example.app1.ui.games.GobangActivity;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -32,4 +36,4 @@ public class GamesFragment extends Fragment {
         
         return view;
     }
-} 
+}

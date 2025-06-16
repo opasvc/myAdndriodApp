@@ -1,4 +1,4 @@
-package com.example.app1;
+package com.example.app1.adapter;
 
 import android.content.Context;
 import android.content.Intent;
@@ -10,6 +10,8 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
+import com.example.app1.R;
+import com.example.app1.model.Game;
 import java.util.List;
 
 public class GameAdapter extends RecyclerView.Adapter<GameAdapter.GameViewHolder> {
@@ -57,4 +59,4 @@ public class GameAdapter extends RecyclerView.Adapter<GameAdapter.GameViewHolder
             btnPlay = itemView.findViewById(R.id.btnPlay);
         }
     }
-} 
+}

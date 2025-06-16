@@ -1,21 +1,13 @@
-package com.example.app1;
+package com.example.app1.ui.games;
 
 import android.os.Bundle;
-import android.widget.Button;
 import androidx.appcompat.app.AppCompatActivity;
+import com.example.app1.R;
 
 public class GobangActivity extends AppCompatActivity {
-    private GobangView gobangView;
-    private Button btnRestart;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_gobang);
-
-        gobangView = findViewById(R.id.gobangView);
-        btnRestart = findViewById(R.id.btnRestart);
-
-        btnRestart.setOnClickListener(v -> gobangView.restart());
     }
 } 
