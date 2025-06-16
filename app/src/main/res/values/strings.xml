@@ -1,5 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">应用 666</string>
+    <string name="app_name">夏天</string>
     <string name="app_login_page_text">登   录</string>
     <string name="login_page_user_text">输入用户名</string>
     <string name="login_page_user_password_text">输入用密码</string>

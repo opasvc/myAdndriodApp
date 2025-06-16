@@ -38,7 +38,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
                 android:layout_marginBottom="24dp"
-                android:text="@string/app_login_page_text"
+                android:text="注册"
                 android:textColor="@color/purple_700"
                 android:textSize="28sp"
                 android:textStyle="bold" />
@@ -48,11 +48,11 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
-                android:hint="账号"
+                android:hint="用户名"
                 app:boxStrokeWidth="1dp"
                 app:boxStrokeWidthFocused="1dp"
                 app:boxStrokeColor="@color/primary"
-                app:hintEnabled="true"
+                app:hintEnabled="false"
                 app:startIconDrawable="@drawable/ic_profile"
                 app:startIconTint="@color/purple_500"
                 style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
@@ -62,8 +62,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="48dp"
                     android:inputType="text"
-                    android:maxLines="1"
-                    android:padding="8dp" />
+                    android:maxLines="1" />
             </com.google.android.material.textfield.TextInputLayout>
 
             <com.google.android.material.textfield.TextInputLayout
@@ -75,7 +74,7 @@
                 app:boxStrokeWidth="1dp"
                 app:boxStrokeWidthFocused="1dp"
                 app:boxStrokeColor="@color/primary"
-                app:hintEnabled="true"
+                app:hintEnabled="false"
                 app:passwordToggleEnabled="true"
                 app:startIconDrawable="@drawable/ic_lock"
                 app:startIconTint="@color/purple_500"
@@ -86,27 +85,49 @@
                     android:layout_width="match_parent"
                     android:layout_height="48dp"
                     android:inputType="textPassword"
-                    android:maxLines="1"
-                    android:padding="8dp" />
+                    android:maxLines="1" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tilConfirmPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:hint="确认密码"
+                app:boxStrokeWidth="1dp"
+                app:boxStrokeWidthFocused="1dp"
+                app:boxStrokeColor="@color/primary"
+                app:hintEnabled="false"
+                app:passwordToggleEnabled="true"
+                app:startIconDrawable="@drawable/ic_lock"
+                app:startIconTint="@color/purple_500"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etConfirmPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:inputType="textPassword"
+                    android:maxLines="1" />
             </com.google.android.material.textfield.TextInputLayout>
 
             <com.google.android.material.button.MaterialButton
-                android:id="@+id/btnLogin"
+                android:id="@+id/btnRegister"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="24dp"
                 android:layout_marginBottom="16dp"
                 android:padding="12dp"
-                android:text="@string/app_login_page_text"
+                android:text="注册"
                 android:textSize="16sp"
                 app:cornerRadius="12dp" />
 
             <TextView
-                android:id="@+id/tvRegister"
+                android:id="@+id/tvLogin"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
-                android:text="还没有账号？点击注册"
+                android:text="已有账号？点击登录"
                 android:textColor="@color/purple_500"
                 android:textSize="14sp" />
         </LinearLayout>
@@ -121,4 +142,4 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
-</androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout> 
